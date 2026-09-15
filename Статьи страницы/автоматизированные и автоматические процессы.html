@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Автоматизированные и автоматические процессы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d13;
+    --bg-card: #12151f;
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #f1f3f9;
+    --text-muted: #8b92a5;
+    --accent: #22c55e;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background-color: var(--bg); }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  .back-link {
+    display: inline-block;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 32px;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--text); }
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 40px 0 16px;
+    color: var(--accent);
+  }
+  p { margin-bottom: 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  li ul { margin-top: 10px; }
+  b { font-weight: 600; }
+  .term-link {
+    color: #fbbf24;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(251, 191, 36, 0.6);
+  }
+  .term-link:hover { color: #fde68a; border-bottom-color: #fde68a; }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 8px;
+  }
+  .sources {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .sources li { margin-bottom: 6px; }
+  sup a { color: var(--text-muted); text-decoration: none; }
+  sup a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<a class="back-link" href="../index.html">← Тройная точка</a>
+
+<h1>Автоматизированные и автоматические процессы</h1>
+
+<p>Главное отличие между автоматическим и автоматизированным процессом — <b>участие человека</b>:
+в автоматическом процессе человек полностью исключён, а в автоматизированном часть функций
+выполняет машина, а ключевые решения принимает человек.<sup><a href="https://ru.wikipedia.org/wiki/Автоматизация_технологических_процессов" target="_blank" rel="noopener noreferrer">1</a>, <a href="http://vesserver.com/статьи/автоматизированное-и-автоматическое-управление" target="_blank" rel="noopener noreferrer">2</a></sup></p>
+
+<h2>Автоматические процессы</h2>
+<div class="card">
+  <p><b>Суть:</b> все действия выполняются техническими средствами или программами без участия
+  человека. Человек задаёт общую программу или запускает систему, но дальше она работает
+  сама.<sup><a href="https://ru.wikipedia.org/wiki/Автоматизация_технологических_процессов" target="_blank" rel="noopener noreferrer">1</a></sup></p>
+  <p><b>Роль человека:</b> наблюдение, обслуживание и настройка.</p>
+  <p><b>Примеры:</b></p>
+  <ul>
+    <li>Автоматический светофор, работающий по таймеру.</li>
+    <li>Бытовая стиральная машина, которая сама набирает воду, стирает и отжимает по выбранному режиму.</li>
+    <li>Робот-пылесос, убирающий квартиру по расписанию.</li>
+  </ul>
+</div>
+
+<h2>Автоматизированные процессы</h2>
+<div class="card">
+  <p><b>Суть:</b> процесс выполняется совместно — часть работы делают машины, а часть
+  человек.<sup><a href="http://vesserver.com/статьи/автоматизированное-и-автоматическое-управление" target="_blank" rel="noopener noreferrer">1</a>, <a href="https://ru.wikipedia.org/wiki/Автоматизация_технологических_процессов" target="_blank" rel="noopener noreferrer">2</a></sup></p>
+  <p><b>Роль человека:</b> принятие ответственных решений, корректировка работы системы, ввод
+  данных или управление на определённых этапах.<sup><a href="https://ru.wikipedia.org/wiki/Автоматизация_технологических_процессов" target="_blank" rel="noopener noreferrer">1</a></sup></p>
+  <p><b>Примеры:</b></p>
+  <ul>
+    <li>Автоматизированная система управления на заводе, где датчики следят за температурой, но аварийный стоп или изменение режима делает оператор.</li>
+    <li>Бухгалтерская программа (например, 1С), которая сама считает налоги и строит отчёты, но данные вводит человек, и он же подтверждает платежи.</li>
+    <li>Автопилот в самолёте, который ведёт судно по маршруту, но пилот контролирует ситуацию и может перехватить управление.<sup><a href="http://elmec.com.ua/info/11/" target="_blank" rel="noopener noreferrer">1</a>, <a href="http://vesserver.com/статьи/автоматизированное-и-автоматическое-управление" target="_blank" rel="noopener noreferrer">2</a></sup></li>
+  </ul>
+</div>
+
+<div class="sources">
+  <p>Источники:</p>
+  <ul>
+    <li>Wikipedia, «Автоматизация технологических процессов»</li>
+    <li>vesserver.com, «Автоматизированное и автоматическое управление»</li>
+    <li>elmec.com.ua, «Автоматика и автоматизация»</li>
+  </ul>
+</div>
+
+</body>
+</html>
