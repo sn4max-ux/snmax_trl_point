@@ -2216,6 +2216,50 @@
       background: rgba(56, 189, 248, 0.18);
       border-color: rgba(56, 189, 248, 0.5);
     }
+
+    .portal-section {
+      padding: 28px 0 4px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .portal-card {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 14px;
+      padding: 20px 22px;
+      text-decoration: none;
+      transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .portal-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .portal-card h3 {
+      margin: 0;
+      font-size: 17px;
+      color: #ffffff;
+    }
+
+    .portal-card p {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 720px) {
+      .portal-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -2239,6 +2283,23 @@
       </nav>
     </div>
   </header>
+
+  <section class="portal-section page-width">
+    <div class="portal-grid">
+      <a class="portal-card" href="https://t.me/snmaxforex" target="_blank" rel="noopener noreferrer">
+        <h3>Позвонить</h3>
+        <p>Telegram — ответим сразу</p>
+      </a>
+      <a class="portal-card" href="mailto:snmax.fx@gmail.com">
+        <h3>Задать вопрос</h3>
+        <p>Напишите на почту — разберём подробно</p>
+      </a>
+      <a class="portal-card" href="#system">
+        <h3>Как это работает</h3>
+        <p>Смысл системы — сразу к делу</p>
+      </a>
+    </div>
+  </section>
 
   <div class="layout-with-rail">
   <main>
